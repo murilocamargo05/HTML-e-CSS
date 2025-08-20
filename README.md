@@ -126,4 +126,91 @@ Eles são criados com a tag `<form>`.
 - `disabled` → desabilita um campo.
 - `<textarea rows="5">` → campo de texto longo (multilinha).
 - `<button>` → botão (pode ser `submit`, `reset` ou `button`).
+
+---
+
+
+---
+
+## 🎨 Mídias e Outros Elementos Importantes
+
+### 🖼️ Imagens (`<img>`)
+A tag `<img>` é usada para inserir imagens em uma página HTML.
+
+Exemplo:
+```html
+<img src="imagem.jpg" alt="Descrição da imagem" width="300" height="200">
+```
+
+- `src` → caminho da imagem (URL ou local).
+- `alt` → descrição da imagem (importante para acessibilidade e SEO).
+- `width` e `height` → definem dimensões da imagem.
+
+---
+
+### 🎥 Vídeos (`<video>`)
+A tag `<video>` é usada para inserir vídeos.
+
+Exemplo:
+```html
+<video src="video.mp4" width="400" controls></video>
+```
+
+- `src` → caminho do vídeo.
+- `controls` → adiciona controles de reprodução (play, pause, volume).
+- `autoplay` → inicia automaticamente.
+- `loop` → repete continuamente.
+
+---
+
+### 🎧 Áudio (`<audio>`)
+A tag `<audio>` insere arquivos de áudio.
+
+Exemplo:
+```html
+<audio src="musica.mp3" controls></audio>
+```
+
+- `src` → caminho do arquivo de áudio.
+- `controls` → adiciona botões de play, pause, volume.
+- `autoplay` → inicia automaticamente.
+- `loop` → reproduz em loop.
+
+---
+
+### 💬 Comentários
+Comentários no HTML não aparecem no navegador, servem apenas para anotações no código.
+
+Exemplo:
+```html
+<!-- Esse é um comentário em HTML -->
+```
+
+---
+
+### 🔘 Botões com Funções (`onclick`)
+O atributo `onclick` permite executar uma ação JavaScript ao clicar no botão.
+
+Exemplo para controlar áudio ou vídeo:
+```html
+<audio id="musica" src="musica.mp3"></audio>
+
+<button onclick="document.getElementById('musica').play()">▶ Play</button>
+<button onclick="document.getElementById('musica').pause()">⏸ Pause</button>
+```
+
+---
+
+### 🌐 Iframe (`<iframe>`)
+A tag `<iframe>` permite incorporar páginas da web dentro de outra página.
+
+Exemplo:
+```html
+<iframe src="https://www.example.com" width="600" height="400" style="border:0;"></iframe>
+```
+
+- `src` → URL da página a ser exibida.
+- `width` e `height` → dimensões.
+- `style` → pode ser usado para remover bordas (`style="border:0;"`).
+
 ---
